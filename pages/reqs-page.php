@@ -324,7 +324,7 @@ ORDER BY requirements_list.reqs_listID;";
                 <div class="card-header pb-0">
                   <h6>Requirements List</h6>
                   <p class="text-sm">
-                    <span class="font-weight-bold">3</span> must be submitted
+                    <span class="font-weight-bold"></span> Below requirements must be submitted.
                   </p>
                 </div>
                 <div class="col-6 text-end" style="position: absolute; margin-top: 20px; margin-left: 185px">
@@ -340,7 +340,7 @@ ORDER BY requirements_list.reqs_listID;";
                     <div class="card-body p-3">
                       <div class="timeline timeline-one-side">
                         <div class="mb-0">
-                          
+
                           <span class="timeline-step">
                             <i class="material-icons text-danger text-gradient">picture_as_pdf</i>
                             <div class="dropdown">
@@ -351,8 +351,6 @@ ORDER BY requirements_list.reqs_listID;";
                               </div>
                             </div>
                           </span>
-                          
-
                           <div class="timeline-content">
                             <h6 class="text-dark text-sm font-weight-bold mb-0">
                               <?php echo $reqslist['Requirements']; ?>
@@ -360,9 +358,6 @@ ORDER BY requirements_list.reqs_listID;";
                             <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                               <?php echo $reqslist['notes']; ?>
                             </p>
-                            
-
-
                           </div>
                         </div>
                       </div>
@@ -378,35 +373,44 @@ ORDER BY requirements_list.reqs_listID;";
           .dropdown {
             position: fixed;
             margin-left: 500px;
-            
+
           }
 
           .dots {
-            
+
             width: 20px;
             height: 20px;
             font-size: 20px;
             line-height: 20px;
             text-align: center;
             cursor: pointer;
+            position: ;
           }
 
           .dropdown-content {
             display: none;
             position: fixed;
             background-color: #ffffff;
-            min-width:90px;
+            min-width: 60px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-radius: 10px;
             font-size: 15px;
+
           }
 
           .dropdown-content a {
+            font-size: 12px;
             color: black;
-            padding: 12px 16px;
+            padding: 5px;
             text-decoration: none;
             display: block;
+          }
+
+          .dropdown-content a:hover {
+            background-color: #edebec;
+            border-radius: 10px;
+            /* Change to the desired hover color */
           }
 
           .dropdown:hover .dropdown-content {
